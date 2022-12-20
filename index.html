@@ -1,127 +1,160 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" type="text/css" href="./public/css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
-        
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
+            rel="stylesheet">
+
         <script src="https://kit.fontawesome.com/7dfe0194f8.js" crossorigin="anonymous"></script>
-       
-        <title>Oh my food</title>
+
+        <title>ohmyfood</title>
     </head>
+
     <body>
 
         <div class="page_loader"></div>
         <header>
-           <h1>Oh my food</h1>
+            <h1>ohmyfood</h1>
         </header>
 
-        <section class="location"></section>
+        <section class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Paris, Belleville</p>
+        </section>
 
         <section class="presentation">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <button href="#restaurant">Explorez nos restaurants</button>
-        </section>   
+        </section>
 
         <section class="functions">
             <h2> Fonctionnement</h2>
-
             <div class="functions_list">
 
                 <div class="step">
-                    <div><p>1</p></div>
-                    <div><i class="fa-solid fa-mobile-screen-button"></i> <p>Choisissez un restaurant</p> </div>
+                    <div>
+                        <p>1</p>
+                    </div>
+                    <div><i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
                 </div>
 
                 <div class="step">
-                    <div><p>2</p></div>
-                    <div><i class="fa-solid fa-list-ul"></i> <p>Composez votre menu</p> </div>
+                    <div>
+                        <p>2</p>
+                    </div>
+                    <div><i class="fa-solid fa-list-ul"></i>
+                        <p>Composez votre menu</p>
+                    </div>
                 </div>
 
                 <div class="step">
-                    <div><p>3</p></div>
-                    <div><i class="fa-solid fa-store"></i> <p>Dégustez au restaurant</p> </div>
+                    <div>
+                        <p>3</p>
+                    </div>
+                    <div><i class="fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
                 </div>
 
             </div>
 
         </section>
-    
+
         <section class="restaurants" id="restaurant">
             <h2>Restaurants</h2>
 
             <article>
                 <a>
-                    <div class="new"><p>Nouveau</p></div>
-                    <img src="" alt="">
-                    <div class="description">
-                        <p></p>
-                        <p></p>
+                    <div class="new">
+                        <p>Nouveau</p>
                     </div>
-                    <div class="heart">
-                        <i class="fa-thin fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
+                    <img src="" alt="">
+                    <div class="description-container">
+                        <div class="description">
+                            <h3>La palette de goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-thin fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
                     </div>
                 </a>
             </article>
 
             <article>
-                 <a>
-                    <div class="new"><p>Nouveau</p></div>
-                    <img src="" alt="">
-                    <div class="description">
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class="heart">
-                        <i class="fa-thin fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                 </a>
-            </article> 
-
-            <article>
                 <a>
+                    <div class="new">
+                        <p>Nouveau</p>
+                    </div>
                     <img src="" alt="">
-                     <div class="description">
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="heart">
-                    <i class="fa-thin fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+                    <div class="description-container">
+                        <div class="description">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-thin fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
                 </a>
             </article>
 
             <article>
                 <a>
-                    <img src="" alt="">  
-                    <div class="description">
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="heart">
-                    <i class="fa-thin fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+                    <img src="" alt="">
+                    <div class="description-container">
+                        <div class="description">
+                            <h3>A la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-thin fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a>
+                    <img src="" alt="">
+                    <div class="description-container">
+                        <div class="description">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-thin fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
                 </a>
             </article>
 
         </section>
 
-         <footer>
+        <footer>
             <img src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
             <ul>
-                <li></li>       
+                <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
 
-         </footer>
+        </footer>
     </body>
 
 </html>
