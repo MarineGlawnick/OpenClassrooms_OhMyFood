@@ -1,1 +1,24 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+.header_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_home h1 {
+  font-family: Shrikhand;
+}
+
+.header_location {
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: inset 0 5px 4px -2px darkgray;
+}/*# sourceMappingURL=main.css.map */
