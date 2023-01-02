@@ -20,5 +20,28 @@ body {
   align-items: baseline;
   justify-content: center;
   gap: 10px;
-  box-shadow: inset 0 5px 4px -2px darkgray;
+  box-shadow: inset 0 5px 4px -2px #cfcfcf;
+}
+
+.btn {
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  padding: 0 20px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  cursor: pointer;
+}
+
+.presentation {
+  background-color: rgba(247, 247, 247, 0.4196078431);
+  text-align: center;
+  padding: 40px 52px;
+}
+.presentation h2 {
+  margin: 0;
+}
+.presentation p {
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

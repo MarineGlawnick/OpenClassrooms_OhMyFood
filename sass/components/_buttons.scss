@@ -1,0 +1,10 @@
+.btn {
+    border-radius: 30px;
+    border: none;
+    height: 40px;
+    padding: 0 20px;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(175deg, $secondary, $primary);
+    cursor: pointer;
+}
