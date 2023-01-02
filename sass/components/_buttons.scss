@@ -7,4 +7,5 @@
     color: white;
     background: linear-gradient(175deg, $secondary, $primary);
     cursor: pointer;
+    box-shadow: darken($grey, 20%) 0 4px 7px;
 }
