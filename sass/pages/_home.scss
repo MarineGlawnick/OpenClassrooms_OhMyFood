@@ -28,8 +28,8 @@
 
 .restaurants {
     padding: 10px 10px;
-    
-    background-color: #f7f7f76b ;
+
+    background-color: #f7f7f76b;
 }
 
 .restaurants_tab {
@@ -42,6 +42,7 @@
         border-radius: 20px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         background-color: #ffffff;
+        position: relative;
 
         img {
             object-fit: cover;
@@ -51,22 +52,26 @@
             border-top-right-radius: 20px;
         }
 
-        .new {
-            position: absolute;
-            right: 20px;
-            // bottom: 75px;
-            background-color: $tertiary;
-            padding: 5px 10px;
-            border-radius: 1px;
-            p{
-                margin: 0;
-            }
-        }
-
         a {
             text-decoration: none;
             color: black;
         }
+
+        .new {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: $tertiary;
+            padding: 5px 10px;
+            border-radius: 1px;
+            font-weight: 500;
+
+            p {
+                margin: 0;
+            }
+        }
+
+
     }
 }
 
