@@ -1,0 +1,24 @@
+footer {
+    background-color: $neutral2;
+    padding: 20px 25px;
+
+    img{
+        width: 30%;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        line-height: 25px;
+
+        li {
+            a {
+                text-decoration: none; 
+                color: white;
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
