@@ -51,31 +51,23 @@ body {
   padding: 10px 10px;
   background-color: rgba(247, 247, 247, 0.4196078431);
 }
-
-.restaurants_tab {
+.restaurants__tab {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.restaurants_tab .restaurants_card {
+.restaurants__tab .restaurants__card {
   height: 220px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   position: relative;
 }
-.restaurants_tab .restaurants_card img {
-  object-fit: cover;
-  height: 150px;
-  width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.restaurants_tab .restaurants_card a {
+.restaurants__tab .restaurants__card a {
   text-decoration: none;
   color: black;
 }
-.restaurants_tab .restaurants_card .new {
+.restaurants__tab .restaurants__card a .new {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -84,20 +76,26 @@ body {
   border-radius: 1px;
   font-weight: 500;
 }
-.restaurants_tab .restaurants_card .new p {
+.restaurants__tab .restaurants__card a .new p {
   margin: 0;
 }
-
-.restaurants_presentation {
+.restaurants__tab .restaurants__card a img {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants__tab .restaurants__card a .restaurants-presentation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 5px 10px;
 }
-.restaurants_presentation .restaurants_description h3 {
+.restaurants__tab .restaurants__card a .restaurants-presentation__description h3 {
   margin: 0;
 }
-.restaurants_presentation .restaurants_description p {
+.restaurants__tab .restaurants__card a .restaurants-presentation__description p {
   margin: 0;
   font-weight: 400;
 }

@@ -28,67 +28,64 @@
 
 .restaurants {
     padding: 10px 10px;
-
     background-color: #f7f7f76b;
-}
 
-.restaurants_tab {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    &__tab {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
 
-    .restaurants_card {
-        height: 220px;
-        border-radius: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        background-color: #ffffff;
-        position: relative;
+        .restaurants__card {
+            height: 220px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            position: relative;
 
-        img {
-            object-fit: cover;
-            height: 150px;
-            width: 100%;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
+            a {
+                text-decoration: none;
+                color: black;
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
+                .new {
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    background-color: $tertiary;
+                    padding: 5px 10px;
+                    border-radius: 1px;
+                    font-weight: 500;
 
-        .new {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            background-color: $tertiary;
-            padding: 5px 10px;
-            border-radius: 1px;
-            font-weight: 500;
+                    p {
+                        margin: 0;
+                    }
+                }
 
-            p {
-                margin: 0;
+                img {
+                    object-fit: cover;
+                    height: 150px;
+                    width: 100%;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+
+                .restaurants-presentation {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 5px 10px;
+
+                    &__description {
+                        h3 {
+                            margin: 0;
+                        }
+
+                        p {
+                            margin: 0;
+                            font-weight: 400;
+                        }
+                    }
+                }
             }
-        }
-
-
-    }
-}
-
-.restaurants_presentation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px 10px;
-
-    .restaurants_description {
-        h3 {
-            margin: 0;
-        }
-
-        p {
-            margin: 0;
-            font-weight: 400;
         }
     }
 }
