@@ -27,13 +27,13 @@
 // }
 
 .restaurants {
-    padding: 10px 10px;
-    background-color: #f7f7f76b;
+    padding: 10px 15px 50px;
+    background-color: $neutral;
 
     &__tab {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
 
         .restaurants__card {
             height: 220px;
@@ -73,7 +73,7 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    padding: 5px 10px;
+                    padding: 10px;
 
                     &__description {
                         h3 {
