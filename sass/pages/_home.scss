@@ -57,6 +57,7 @@
 
                     p {
                         margin: 0;
+                        color: darken($tertiary, 40%)
                     }
                 }
 
@@ -83,6 +84,14 @@
                             margin: 0;
                             font-weight: 400;
                         }
+                    }
+
+                    .heart {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        width: 60px;
                     }
                 }
             }

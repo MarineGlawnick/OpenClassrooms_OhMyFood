@@ -78,6 +78,7 @@ body {
 }
 .restaurants__tab .restaurants__card a .new p {
   margin: 0;
+  color: #278870;
 }
 .restaurants__tab .restaurants__card a img {
   object-fit: cover;
@@ -98,6 +99,13 @@ body {
 .restaurants__tab .restaurants__card a .restaurants-presentation__description p {
   margin: 0;
   font-weight: 400;
+}
+.restaurants__tab .restaurants__card a .restaurants-presentation .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
