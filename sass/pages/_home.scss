@@ -12,19 +12,46 @@
     }
 }
 
-// .functions{
-//     margin: 0 10px;
-// }
+.functions {
+    padding: 15px 10px 30px 20px;
+    ol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        counter-reset: my-counter;
+       padding: 0;
 
-// .functions_list{
-//     .functions_step{
-//         // display: flex;
-//         align-items: baseline;
-//         // background-color: #f7f7f76b;
-//         // border-radius: 10px;
+        li {
+            padding : 25px 0 25px 20px;
+            display: flex;
+            align-items: baseline;
+            border-radius: 25px;
+            width: 90%;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: $neutral;
+            box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+            counter-increment: my-counter;
+            i{
+                margin-right: 25px;
+            }
+            p{
+                margin: 0;
+            }
 
-//     }
-// }
+            &::before {
+                content: counter(my-counter);
+                background-color: $primary;
+                border-radius: 50px;
+                color: white;
+                margin-left: -32px;
+                margin-right: 32px;
+                padding: 5px 9px;
+            }
+        }
+    }
+}
 
 .restaurants {
     padding: 10px 15px 50px;

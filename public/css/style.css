@@ -67,6 +67,45 @@ footer ul li a i {
   font-weight: 300;
 }
 
+.functions {
+  padding: 15px 10px 30px 20px;
+}
+.functions ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  counter-reset: my-counter;
+  padding: 0;
+}
+.functions ol li {
+  padding: 25px 0 25px 20px;
+  display: flex;
+  align-items: baseline;
+  border-radius: 25px;
+  width: 90%;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+  counter-increment: my-counter;
+}
+.functions ol li i {
+  margin-right: 25px;
+}
+.functions ol li p {
+  margin: 0;
+}
+.functions ol li::before {
+  content: counter(my-counter);
+  background-color: #9356DC;
+  border-radius: 50px;
+  color: white;
+  margin-left: -32px;
+  margin-right: 32px;
+  padding: 5px 9px;
+}
+
 .restaurants {
   padding: 10px 15px 50px;
   background-color: #f5f5f5;
