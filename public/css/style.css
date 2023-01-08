@@ -138,6 +138,7 @@ footer ul li a i {
 .restaurants__tab {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 @media screen and (min-width: 769px) {
@@ -150,7 +151,7 @@ footer ul li a i {
 }
 .restaurants__tab .restaurants__card {
   height: 230px;
-  width: 100%;
+  width: 97%;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;

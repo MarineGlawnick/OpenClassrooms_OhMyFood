@@ -39,6 +39,7 @@
             background-color: $neutral;
             box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
             counter-increment: my-counter;
+            
             @media screen and (min-width:992px) {
                 width: 30%;
             }
@@ -75,6 +76,7 @@
     &__tab {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
 
         @media screen and (min-width:769px) {
@@ -84,11 +86,9 @@
             justify-content: center;
         }
 
-
-
         .restaurants__card {
             height: 230px;
-            width: 100%;
+            width: 97%;
             border-radius: 20px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             background-color: #ffffff;
@@ -100,7 +100,6 @@
             @media screen and (min-width:992px) {
                 width: 23%;
             }
-
 
             a {
                 text-decoration: none;
