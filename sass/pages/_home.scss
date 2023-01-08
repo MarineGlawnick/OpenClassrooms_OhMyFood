@@ -14,16 +14,22 @@
 
 .functions {
     padding: 15px 10px 30px 20px;
+
     ol {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
         counter-reset: my-counter;
-       padding: 0;
+        padding: 0;
+        @media screen and (min-width:992px) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 25px;
+        }
 
         li {
-            padding : 25px 0 25px 20px;
+            padding: 25px 0 25px 20px;
             display: flex;
             align-items: baseline;
             border-radius: 25px;
@@ -33,10 +39,19 @@
             background-color: $neutral;
             box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
             counter-increment: my-counter;
-            i{
+            @media screen and (min-width:992px) {
+                width: 30%;
+            }
+
+            i {
                 margin-right: 25px;
             }
-            p{
+
+            .purple {
+                color: $primary;
+            }
+
+            p {
                 margin: 0;
             }
 
@@ -62,12 +77,30 @@
         flex-direction: column;
         gap: 20px;
 
+        @media screen and (min-width:769px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+
         .restaurants__card {
-            height: 220px;
+            height: 230px;
+            width: 100%;
             border-radius: 20px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             background-color: #ffffff;
-            position: relative;
+
+            @media screen and (min-width:769px) and (max-width: 991px) {
+                width: 47%;
+            }
+
+            @media screen and (min-width:992px) {
+                width: 23%;
+            }
+
 
             a {
                 text-decoration: none;
@@ -90,7 +123,7 @@
 
                 img {
                     object-fit: cover;
-                    height: 150px;
+                    height: 160px;
                     width: 100%;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;

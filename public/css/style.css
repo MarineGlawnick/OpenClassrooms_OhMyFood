@@ -30,6 +30,16 @@ footer {
 footer img {
   width: 30%;
 }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  footer img {
+    width: 15%;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer img {
+    width: 10%;
+  }
+}
 footer ul {
   list-style: none;
   padding: 0;
@@ -78,6 +88,13 @@ footer ul li a i {
   counter-reset: my-counter;
   padding: 0;
 }
+@media screen and (min-width: 992px) {
+  .functions ol {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+}
 .functions ol li {
   padding: 25px 0 25px 20px;
   display: flex;
@@ -90,8 +107,16 @@ footer ul li a i {
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
   counter-increment: my-counter;
 }
+@media screen and (min-width: 992px) {
+  .functions ol li {
+    width: 30%;
+  }
+}
 .functions ol li i {
   margin-right: 25px;
+}
+.functions ol li .purple {
+  color: #9356DC;
 }
 .functions ol li p {
   margin: 0;
@@ -115,12 +140,30 @@ footer ul li a i {
   flex-direction: column;
   gap: 20px;
 }
+@media screen and (min-width: 769px) {
+  .restaurants__tab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .restaurants__tab .restaurants__card {
-  height: 220px;
+  height: 230px;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  position: relative;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .restaurants__tab .restaurants__card {
+    width: 47%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants__tab .restaurants__card {
+    width: 23%;
+  }
 }
 .restaurants__tab .restaurants__card a {
   text-decoration: none;
@@ -141,7 +184,7 @@ footer ul li a i {
 }
 .restaurants__tab .restaurants__card a img {
   object-fit: cover;
-  height: 150px;
+  height: 160px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
