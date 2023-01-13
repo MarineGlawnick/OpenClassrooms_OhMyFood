@@ -129,13 +129,13 @@
                     border-top-right-radius: 20px;
                 }
 
-                .restaurants-presentation {
+                .restaurants__presentation {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     padding: 10px;
 
-                    &__description {
+                    .restaurants__presentation-description {
                         h3 {
                             margin: 0;
                         }

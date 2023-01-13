@@ -192,20 +192,20 @@ footer ul li a i {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.restaurants__tab .restaurants__card a .restaurants-presentation {
+.restaurants__tab .restaurants__card a .restaurants__presentation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
 }
-.restaurants__tab .restaurants__card a .restaurants-presentation__description h3 {
+.restaurants__tab .restaurants__card a .restaurants__presentation .restaurants__presentation-description h3 {
   margin: 0;
 }
-.restaurants__tab .restaurants__card a .restaurants-presentation__description p {
+.restaurants__tab .restaurants__card a .restaurants__presentation .restaurants__presentation-description p {
   margin: 0;
   font-weight: 400;
 }
-.restaurants__tab .restaurants__card a .restaurants-presentation .heart {
+.restaurants__tab .restaurants__card a .restaurants__presentation .heart {
   display: flex;
   justify-content: center;
   align-items: center;
