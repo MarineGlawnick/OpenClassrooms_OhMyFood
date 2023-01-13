@@ -15,6 +15,12 @@
 .functions {
     padding: 15px 10px 30px 20px;
 
+    h2 {
+        @media screen and (min-width:769px) {
+            text-align: center;
+        }
+    }
+
     ol {
         display: flex;
         flex-direction: column;
@@ -22,6 +28,7 @@
         gap: 15px;
         counter-reset: my-counter;
         padding: 0;
+
         @media screen and (min-width:992px) {
             flex-direction: row;
             justify-content: center;
@@ -39,7 +46,7 @@
             background-color: $neutral;
             box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
             counter-increment: my-counter;
-            
+
             @media screen and (min-width:992px) {
                 width: 30%;
             }
@@ -73,6 +80,12 @@
     padding: 10px 15px 50px;
     background-color: $neutral;
 
+    h2 {
+        @media screen and (min-width:769px) {
+            text-align: center;
+        }
+    }
+
     &__tab {
         display: flex;
         flex-direction: column;
@@ -94,13 +107,10 @@
             background-color: #ffffff;
             position: relative;
 
-            @media screen and (min-width:769px)  {
+            @media screen and (min-width:769px) {
                 width: 47%;
             }
 
-            @media screen and (min-width:992px) {
-                width: 23%;
-            }
 
             a {
                 text-decoration: none;
