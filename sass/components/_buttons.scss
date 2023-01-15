@@ -8,4 +8,7 @@
     background: linear-gradient(175deg, $secondary, $primary);
     cursor: pointer;
     box-shadow: darken($neutral, 20%) 0 4px 7px;
+    &--command{
+        padding: 0 40px;
+    }
 }
