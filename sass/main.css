@@ -125,6 +125,9 @@ footer ul li a i {
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
   counter-increment: my-counter;
 }
+.functions ol li:hover {
+  background-color: gainsboro;
+}
 @media screen and (min-width: 992px) {
   .functions ol li {
     width: 30%;
@@ -133,7 +136,7 @@ footer ul li a i {
 .functions ol li i {
   margin-right: 25px;
 }
-.functions ol li .purple {
+.functions ol li i:hover {
   color: #9356DC;
 }
 .functions ol li p {
