@@ -167,11 +167,6 @@ footer ul li a i {
 .functions ol li:hover p {
   color: black;
 }
-@media screen and (min-width: 992px) {
-  .functions ol li {
-    width: 30%;
-  }
-}
 .functions ol li i {
   margin-right: 25px;
 }
@@ -186,6 +181,11 @@ footer ul li a i {
   margin-left: -32px;
   margin-right: 32px;
   padding: 5px 9px;
+}
+@media screen and (min-width: 992px) {
+  .functions ol li {
+    width: 30%;
+  }
 }
 
 .restaurants {
@@ -211,7 +211,7 @@ footer ul li a i {
     justify-content: center;
   }
 }
-.restaurants__tab .restaurants__card {
+.restaurants__card {
   height: 230px;
   width: 97%;
   border-radius: 20px;
@@ -220,15 +220,15 @@ footer ul li a i {
   position: relative;
 }
 @media screen and (min-width: 769px) {
-  .restaurants__tab .restaurants__card {
+  .restaurants__card {
     width: 47%;
   }
 }
-.restaurants__tab .restaurants__card a {
+.restaurants__card a {
   text-decoration: none;
   color: black;
 }
-.restaurants__tab .restaurants__card a .new {
+.restaurants__card a .new {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -237,11 +237,11 @@ footer ul li a i {
   border-radius: 1px;
   font-weight: 500;
 }
-.restaurants__tab .restaurants__card a .new p {
+.restaurants__card a .new p {
   margin: 0;
   color: #278870;
 }
-.restaurants__tab .restaurants__card a img {
+.restaurants__card a img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 160px;
@@ -249,25 +249,25 @@ footer ul li a i {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.restaurants__tab .restaurants__card a .restaurants__presentation {
+.restaurants__presentation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
 }
-.restaurants__tab .restaurants__card a .restaurants__presentation .restaurants__presentation-description h3 {
-  margin: 0;
-}
-.restaurants__tab .restaurants__card a .restaurants__presentation .restaurants__presentation-description p {
-  margin: 0;
-  font-weight: 400;
-}
-.restaurants__tab .restaurants__card a .restaurants__presentation .heart {
+.restaurants__presentation .heart {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   width: 60px;
+}
+.restaurants__presentation-description h3 {
+  margin: 0;
+}
+.restaurants__presentation-description p {
+  margin: 0;
+  font-weight: 400;
 }
 
 main {
@@ -331,25 +331,6 @@ main .restaurant__subpart article {
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
   position: relative;
 }
-main .restaurant__subpart article .restaurant__dish {
-  width: 80%;
-  padding: 13px 0 13px 13px;
-}
-main .restaurant__subpart article .restaurant__dish .restaurant__dish-name {
-  font-weight: 600;
-  margin: 0 0 5px 0;
-  font-size: 16px;
-}
-main .restaurant__subpart article .restaurant__dish p {
-  font-weight: 300;
-  margin: 0;
-  font-size: 14px;
-}
-@media screen and (min-width: 769px) {
-  main .restaurant__subpart article .restaurant__dish {
-    width: 70%;
-  }
-}
 main .restaurant__subpart article span {
   font-weight: 600;
   right: 17px;
@@ -360,6 +341,25 @@ main .restaurant__subpart article span {
   main .restaurant__subpart {
     width: 31%;
   }
+}
+main .restaurant__dish {
+  width: 80%;
+  padding: 13px 0 13px 13px;
+}
+main .restaurant__dish p {
+  font-weight: 300;
+  margin: 0;
+  font-size: 14px;
+}
+@media screen and (min-width: 769px) {
+  main .restaurant__dish {
+    width: 70%;
+  }
+}
+main .restaurant__dish-name {
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  font-size: 16px;
 }
 main .restaurant .button {
   width: 100%;

@@ -47,22 +47,17 @@
             box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
             counter-increment: my-counter;
 
-            &:hover{
+            &:hover {
                 background-color: darken($neutral, 10%);
                 color: $primary;
-                p{
+
+                p {
                     color: black;
                 }
-            }
-            @media screen and (min-width:992px) {
-                width: 30%;
             }
 
             i {
                 margin-right: 25px;
-                // &:hover{
-                //     color:  $primary;
-                // }
             }
 
             p {
@@ -77,6 +72,10 @@
                 margin-left: -32px;
                 margin-right: 32px;
                 padding: 5px 9px;
+            }
+
+            @media screen and (min-width:992px) {
+                width: 30%;
             }
         }
     }
@@ -104,73 +103,75 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+    }
 
-        .restaurants__card {
-            height: 230px;
-            width: 97%;
-            border-radius: 20px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            background-color: #ffffff;
-            position: relative;
+    &__card {
+        height: 230px;
+        width: 97%;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        position: relative;
 
-            @media screen and (min-width:769px) {
-                width: 47%;
-            }
+        @media screen and (min-width:769px) {
+            width: 47%;
+        }
 
 
-            a {
-                text-decoration: none;
-                color: black;
+        a {
+            text-decoration: none;
+            color: black;
 
-                .new {
-                    position: absolute;
-                    right: 20px;
-                    top: 20px;
-                    background-color: $tertiary;
-                    padding: 5px 10px;
-                    border-radius: 1px;
-                    font-weight: 500;
+            .new {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                background-color: $tertiary;
+                padding: 5px 10px;
+                border-radius: 1px;
+                font-weight: 500;
 
-                    p {
-                        margin: 0;
-                        color: darken($tertiary, 40%)
-                    }
-                }
-
-                img {
-                    object-fit: cover;
-                    height: 160px;
-                    width: 100%;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                }
-
-                .restaurants__presentation {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    padding: 10px;
-
-                    .restaurants__presentation-description {
-                        h3 {
-                            margin: 0;
-                        }
-
-                        p {
-                            margin: 0;
-                            font-weight: 400;
-                        }
-                    }
-
-                    .heart {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        cursor: pointer;
-                        width: 60px;
-                    }
+                p {
+                    margin: 0;
+                    color: darken($tertiary, 40%)
                 }
             }
+
+            img {
+                object-fit: cover;
+                height: 160px;
+                width: 100%;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+        }
+    }
+
+    &__presentation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+
+
+
+        .heart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            width: 60px;
+        }
+    }
+
+    &__presentation-description {
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+            font-weight: 400;
         }
     }
 }

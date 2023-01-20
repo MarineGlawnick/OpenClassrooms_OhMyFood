@@ -67,26 +67,6 @@ main {
                 box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
                 position: relative;
 
-                .restaurant__dish {
-                    width: 80%;
-                    padding: 13px 0 13px 13px;
-
-                    .restaurant__dish-name {
-                        font-weight: 600;
-                        margin: 0 0 5px 0;
-                        font-size: 16px;
-                    }
-
-                    p {
-                        font-weight: 300;
-                        margin: 0;
-                        font-size: 14px;
-                    }
-
-                    @media screen and (min-width:769px) {
-                        width: 70%;
-                    }
-                }
 
                 span {
                     font-weight: 600;
@@ -99,6 +79,27 @@ main {
             @media screen and (min-width:769px) {
                 width: 31%;
             }
+        }
+
+        &__dish {
+            width: 80%;
+            padding: 13px 0 13px 13px;
+
+            p {
+                font-weight: 300;
+                margin: 0;
+                font-size: 14px;
+            }
+
+            @media screen and (min-width:769px) {
+                width: 70%;
+            }
+        }
+
+        &__dish-name {
+            font-weight: 600;
+            margin: 0 0 5px 0;
+            font-size: 16px;
         }
 
         .button {
