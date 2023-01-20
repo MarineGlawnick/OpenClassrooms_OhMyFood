@@ -4,6 +4,16 @@ body {
   font-family: Roboto;
 }
 
+.heart .fullHeart {
+  opacity: 0;
+  transition: opacity 250ms;
+  background-image: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 50px;
+  height: 50px;
+}
+
 .header_home {
   display: flex;
   flex-direction: column;
@@ -152,6 +162,10 @@ footer ul li a i {
 }
 .functions ol li:hover {
   background-color: gainsboro;
+  color: #9356DC;
+}
+.functions ol li:hover p {
+  color: black;
 }
 @media screen and (min-width: 992px) {
   .functions ol li {
@@ -160,9 +174,6 @@ footer ul li a i {
 }
 .functions ol li i {
   margin-right: 25px;
-}
-.functions ol li i:hover {
-  color: #9356DC;
 }
 .functions ol li p {
   margin: 0;
