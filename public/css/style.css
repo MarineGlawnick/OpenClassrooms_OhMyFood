@@ -4,14 +4,32 @@ body {
   font-family: Roboto;
 }
 
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 60px;
+}
+.heart .emptyHeart {
+  font-size: 26px;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+.heart .emptyHeart:hover {
+  opacity: 0;
+}
 .heart .fullHeart {
   opacity: 0;
-  transition: opacity 250ms;
+  position: absolute;
+  font-size: 28px;
+  transition: transform 150ms 50ms ease-in-out;
   background-image: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 50px;
-  height: 50px;
+}
+.heart .fullHeart:hover {
+  opacity: 1;
 }
 
 .header_home {
@@ -253,13 +271,6 @@ footer ul li a i {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
-}
-.restaurants__presentation .heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 60px;
 }
 .restaurants__presentation-description h3 {
   margin: 0;
