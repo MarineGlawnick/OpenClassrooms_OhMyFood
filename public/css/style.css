@@ -130,6 +130,10 @@ footer ul li a i {
 .btn--command {
   padding: 0 40px;
 }
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: #8f8f8f 0 4px 7px;
+}
 
 .presentation {
   background-color: rgba(247, 247, 247, 0.4196078431);
