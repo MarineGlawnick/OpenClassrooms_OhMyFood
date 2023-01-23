@@ -32,6 +32,50 @@ body {
   opacity: 1;
 }
 
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  50% {
+    opacity: 0, 5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.restaurant__subpart .item-1 {
+  animation-delay: 0.1s;
+}
+.restaurant__subpart .item-2 {
+  animation-delay: 0.2s;
+}
+.restaurant__subpart .item-3 {
+  animation-delay: 0.3s;
+}
+.restaurant__subpart .item-4 {
+  animation-delay: 0.4s;
+}
+.restaurant__subpart .item-5 {
+  animation-delay: 0.5s;
+}
+.restaurant__subpart .item-6 {
+  animation-delay: 0.6s;
+}
+.restaurant__subpart .item-7 {
+  animation-delay: 0.7s;
+}
+.restaurant__subpart .item-8 {
+  animation-delay: 0.8s;
+}
+.restaurant__subpart .item-9 {
+  animation-delay: 0.9s;
+}
+.restaurant__subpart .item-10 {
+  animation-delay: 1s;
+}
+
 .header_home {
   display: flex;
   flex-direction: column;
@@ -348,6 +392,8 @@ main .restaurant__subpart article {
   overflow: hidden;
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
   position: relative;
+  animation: slide 0.8s linear;
+  animation-fill-mode: both;
 }
 main .restaurant__subpart article span {
   font-weight: 600;
@@ -365,7 +411,6 @@ main .restaurant__dish {
   padding: 13px 0 13px 13px;
 }
 main .restaurant__dish p {
-  font-weight: 300;
   margin: 0;
   font-size: 14px;
 }
