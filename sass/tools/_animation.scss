@@ -1,3 +1,39 @@
+// animation coeur
+.heart {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+
+    .emptyHeart {
+        font-size: 26px;
+        position: relative;
+        transition: opacity 300ms;
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+
+    .fullHeart {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+        font-size: 28px;
+        transition: opacity 300ms;
+        background-image: linear-gradient(350deg, $primary 0%, $secondary 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+}
+
+// animation element appear
 @keyframes slide {
     0% {
         opacity: 0;
@@ -51,7 +87,7 @@
         animation-delay: 0.9s;
     }
 
-    .item-10{
+    .item-10 {
         animation-delay: 1s;
     }
 }
