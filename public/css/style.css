@@ -228,7 +228,7 @@ footer ul li a i {
   counter-increment: my-counter;
 }
 .functions ol li:hover {
-  background-color: gainsboro;
+  background-color: #d7c0f2;
   color: #9356DC;
 }
 .functions ol li:hover p {

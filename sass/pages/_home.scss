@@ -48,7 +48,7 @@
             counter-increment: my-counter;
 
             &:hover {
-                background-color: darken($neutral, 10%);
+                background-color: lighten($primary, 25%);
                 color: $primary;
 
                 p {
