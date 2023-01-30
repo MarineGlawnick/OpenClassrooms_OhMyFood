@@ -1,3 +1,7 @@
 @mixin check-transition{
     transition: transform 400ms linear;
 }
+
+@mixin box-shadow($size){
+    box-shadow: $size rgba(0, 0, 0, 0.2);
+}

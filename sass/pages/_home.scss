@@ -44,7 +44,7 @@
             font-weight: bold;
             font-size: 16px;
             background-color: $neutral;
-            box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+            @include box-shadow(2px 5px 15px);
             counter-increment: my-counter;
 
             &:hover {
@@ -109,7 +109,7 @@
         height: 230px;
         width: 97%;
         border-radius: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        @include box-shadow( 0 4px 8px 0);
         background-color: #ffffff;
         position: relative;
 
