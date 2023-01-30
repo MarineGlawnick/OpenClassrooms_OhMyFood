@@ -91,3 +91,63 @@
         animation-delay: 1s;
     }
 }
+
+// check animation
+article {
+    span {
+        @include check-transition;
+    }
+
+    .checked__animation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60px;
+        position: absolute;
+        right: 0px;
+        background-color: $tertiary;
+        border-radius: 0 15px 15px 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        @include check-transition;
+
+        i {
+            color: white;
+            font-size: 20px;
+            transition: transform 500ms ease-in-out;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover i {
+        transform: rotate(360deg);
+    }
+
+    &:hover .checked__animation {
+        transform: scaleX(1);
+    }
+
+    &:hover span {
+        transform: translateX(-60px);
+    }
+
+    &:hover .restaurant__dish {
+        width: 60%;
+    }
+
+    @media screen and (min-width:769px) {
+        &:hover .restaurant__dish {
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width:992px) {
+        &:hover .restaurant__dish {
+            width: 60%;
+        }
+    }
+}
