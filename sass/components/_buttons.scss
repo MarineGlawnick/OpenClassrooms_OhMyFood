@@ -1,16 +1,16 @@
 .btn {
+    display: inline-block;
+    text-decoration: none;
     border-radius: 30px;
     border: none;
-    height: 40px;
-    padding: 0 20px;
+    padding: 12px 20px;
     font-weight: 500;
+    font-size: 14px;
     color: white;
     background: linear-gradient(175deg, $secondary, $primary);
     cursor: pointer;
     box-shadow: darken($neutral, 20%) 0 4px 7px;
-    &--command{
-        padding: 0 40px;
-    }
+
     &:hover{
         opacity: 0.8;
         box-shadow: darken($neutral, 40%) 0 4px 7px;
@@ -22,4 +22,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .command{
+        padding: 0 40px;
+        height: 40px;
+    }
 }
