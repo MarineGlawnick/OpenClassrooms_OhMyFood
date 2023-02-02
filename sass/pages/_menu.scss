@@ -60,29 +60,29 @@ main {
                 }
             }
 
-            article {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                background-color: white;
-                border-radius: 15px;
-                margin-top: 15px;
-                overflow: hidden;
-                @include box-shadow(2px 5px 15px);
-                position: relative;
-                animation: slide 0.8s linear;
-                animation-fill-mode: both;
-
-                span {
-                    font-weight: 600;
-                    right: 17px;
-                    bottom: 17px;
-                    position: absolute;
-                }
-            }
-
             @media screen and (min-width:769px) {
                 width: 31%;
+            }
+        }
+
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            background-color: white;
+            border-radius: 15px;
+            margin-top: 15px;
+            overflow: hidden;
+            @include box-shadow(2px 5px 15px);
+            position: relative;
+            animation: slide 0.8s linear;
+            animation-fill-mode: both;
+
+            span {
+                font-weight: 600;
+                right: 17px;
+                bottom: 17px;
+                position: absolute;
             }
         }
 

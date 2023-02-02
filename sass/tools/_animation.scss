@@ -93,7 +93,7 @@
 }
 
 // check animation
-article {
+.restaurant__item {
     span {
         @include check-transition;
     }
