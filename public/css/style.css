@@ -91,7 +91,7 @@ article .checked__animation {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   transform-origin: right;
-  transform: scaleX(0);
+  transform: translateX(60px);
   transition: transform 400ms linear;
 }
 article .checked__animation i {
@@ -106,7 +106,7 @@ article:hover i {
   transform: rotate(360deg);
 }
 article:hover .checked__animation {
-  transform: scaleX(1);
+  transform: translateX(0);
 }
 article:hover span {
   transform: translateX(-60px);
@@ -134,7 +134,6 @@ article:hover .restaurant__dish {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -502,6 +501,8 @@ main .restaurant__subpart article {
   overflow: hidden;
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
   position: relative;
+  animation: slide 0.8s linear;
+  animation-fill-mode: both;
 }
 main .restaurant__subpart article span {
   font-weight: 600;

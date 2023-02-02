@@ -109,7 +109,7 @@ article {
         background-color: $tertiary;
         border-radius: 0 15px 15px 0;
         transform-origin: right;
-        transform: scaleX(0);
+        transform: translateX(60px);
         @include check-transition;
 
         i {
@@ -128,7 +128,7 @@ article {
     }
 
     &:hover .checked__animation {
-        transform: scaleX(1);
+        transform: translateX(0);
     }
 
     &:hover span {
@@ -162,7 +162,7 @@ article {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    overflow: hidden;
+    // overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;

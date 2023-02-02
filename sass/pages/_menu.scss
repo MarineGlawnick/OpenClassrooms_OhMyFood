@@ -70,6 +70,9 @@ main {
                 overflow: hidden;
                 @include box-shadow(2px 5px 15px);
                 position: relative;
+                animation: slide 0.8s linear;
+                animation-fill-mode: both;
+
                 span {
                     font-weight: 600;
                     right: 17px;
