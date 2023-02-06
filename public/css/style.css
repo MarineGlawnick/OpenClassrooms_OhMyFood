@@ -494,7 +494,7 @@ main .restaurant__subpart h3::after {
   background-color: #99E2D0;
   margin-top: 5px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   main .restaurant__subpart {
     width: 31%;
   }
@@ -529,7 +529,7 @@ main .restaurant__dish p {
   overflow: hidden;
   white-space: nowrap;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   main .restaurant__dish {
     width: 70%;
   }
@@ -539,7 +539,7 @@ main .restaurant__dish-name {
   margin: 0 0 5px 0;
   font-size: 16px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   main .restaurant {
     display: flex;
     flex-wrap: wrap;
